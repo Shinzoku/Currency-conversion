@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const toCurrency = document.getElementById('to-currency');
     const resultDiv = document.getElementById('result');
 
-    const apiKey = 'c2fe427c5ba67e1fbf0a390f';//'YOUR_API_KEY_HERE'; // Replace with your actual API key
+    const apiKey = 'YOUR_API_KEY_HERE'; // Replace with your actual API key
     // API source
     const apiUrl = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`;
 
