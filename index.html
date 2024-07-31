@@ -7,6 +7,34 @@
     <title>Currency conversion</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Convertisseur de Devises</h1>
+        <form id="currency-form">
+            <!-- The amount to convert -->
+            <div class="form-group">
+                <label for="amount">Montant :</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <!-- initial currency choice -->
+            <div class="form-group">
+                <label for="from-currency">De :</label>
+                <select id="from-currency" name="from-currency" required>
+                    <!-- Options will be dynamically populated -->
+                </select>
+            </div>
+            <!-- choice of desired currency -->
+            <div class="form-group">
+                <label for="to-currency">À :</label>
+                <select id="to-currency" name="to-currency" required>
+                    <!-- Options will be dynamically populated -->
+                </select>
+            </div>
+            <!-- submit form button-->
+            <button type="submit">Convertir</button>
+        </form>
+        <!-- displays the converted amount -->
+        <div id="result"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
